@@ -103,11 +103,11 @@
   <body>
 
     <nav class="navbar">
-        <a href="accueil">Accueil</a>
+       
         <a href="prof">Liste des Professeurs</a>
         <a href="pointprof">Pointage</a>
         <a href="{{ route('paiementprof') }}">Paiement</a>
-        <a href="propos">À Propos</a>
+        <a href="profc">Créer un compte</a>
         <a href="#">Se Deconnecter</a>
     </nav>
     <div class="container">

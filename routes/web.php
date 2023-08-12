@@ -1,11 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\ProfController;
+use App\Http\Controllers\ProfController;  // Assurez-vous que le chemin vers le contrôleur est correct
 use App\Http\Controllers\PointageController;
-use App\Http\Controllers\ProposController;
 use App\Http\Controllers\PaiementController;
+use App\Http\Controllers\AuthController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,12 @@ use App\Http\Controllers\PaiementController;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/profc', function () {
+    return view('profc');
+});
+Route::get('/login', [AuthController::class, 'login']);
+Route::get('/registration', [AuthController::class, 'registration']);
+Route::post('/register-user',[AuthController::class,'registerUser'])->name('register-user');
 
 Route::get('/prof', [ProfController::class, 'list']);
 Route::get('/ajouter', [ProfController::class, 'ajouter']);

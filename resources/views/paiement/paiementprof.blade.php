@@ -100,11 +100,11 @@
  </style>
  <body>
     <nav class="navbar">
-        <a href="accueil">Accueil</a>
+        
         <a href="prof">Liste des Professeurs</a>
         <a href="">Pointage</a>
         <a href="">Paiement</a>
-        <a href="propos">À Propos</a>
+        <a href="profc">Créer un compte</a>
         <a href="#">Se Deconnecter</a>
     </nav>
 
